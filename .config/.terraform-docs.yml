@@ -14,8 +14,8 @@ sections:
     - modules
 
 content: |-
-  # <Cloud> <Main resource> Terraform module
-  A Terraform module which configures your <Cloud> <Main resource>. <Relevant docs>
+  # AWS Inspector Organization configuration Terraform module
+  A Terraform module which configures your AWS Inspector. https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html
   {{ .Header }}
 
   ## Example
