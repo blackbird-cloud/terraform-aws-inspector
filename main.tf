@@ -5,9 +5,9 @@ resource "aws_inspector2_enabler" "default" {
 
 resource "aws_inspector2_organization_configuration" "default" {
   auto_enable {
-    ec2         = true
-    ecr         = true
-    lambda      = true
-    lambda_code = true
+    ec2         = contains(var.resource_types, "EC2")
+    ecr         = contains(var.resource_types, "ECR")
+    lambda      = contains(var.resource_types, "LAMBDA")
+    lambda_code = contains(var.resource_types, "LAMBDA_CODE")
   }
 }
