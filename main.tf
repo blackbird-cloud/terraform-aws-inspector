@@ -10,4 +10,5 @@ resource "aws_inspector2_organization_configuration" "default" {
     lambda      = contains(var.resource_types, "LAMBDA")
     lambda_code = contains(var.resource_types, "LAMBDA_CODE")
   }
+  depends_on = [aws_inspector2_enabler.default]
 }
