@@ -8,3 +8,15 @@ variable "resource_types" {
   description = "(Required) Type of resources to scan. Valid values are EC2, ECR, and LAMBDA. At least one item is required."
   default     = ["LAMBDA", "LAMBDA_CODE", "EC2", "ECR"]
 }
+
+variable "auto_enable" {
+  type        = bool
+  description = "(Optional) Enable Inspector for accounts that newly join the AWS Organization."
+  default     = true
+}
+
+variable "associate_accounts_ids" {
+  type        = list(string)
+  description = "(Optional) List of account IDs to associate with the Inspector."
+  default     = []
+}
