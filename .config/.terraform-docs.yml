@@ -14,8 +14,8 @@ sections:
     - modules
 
 content: |-
-  # AWS Inspector Organization configuration Terraform module
-  A Terraform module which configures your AWS Inspector. https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html
+  {{ include "./.config/title.md"}}
+
   {{ .Header }}
 
   ## Example
