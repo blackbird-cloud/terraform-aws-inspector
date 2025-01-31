@@ -53,7 +53,7 @@ module "inspector" {
 | <a name="input_account_ids"></a> [account\_ids](#input\_account\_ids) | (Required) Set of account IDs. Can contain one of: the Organization's Administrator Account, or one or more Member Accounts. | `list(string)` | n/a | yes |
 | <a name="input_associate_accounts_ids"></a> [associate\_accounts\_ids](#input\_associate\_accounts\_ids) | (Optional) List of account IDs to associate with the Inspector. | `list(string)` | `[]` | no |
 | <a name="input_auto_enable"></a> [auto\_enable](#input\_auto\_enable) | (Optional) Enable Inspector for accounts that newly join the AWS Organization. | `bool` | `true` | no |
-| <a name="input_resource_types"></a> [resource\_types](#input\_resource\_types) | (Required) Type of resources to scan. Valid values are EC2, ECR, and LAMBDA. At least one item is required. | `list(string)` | <pre>[<br>  "LAMBDA",<br>  "LAMBDA_CODE",<br>  "EC2",<br>  "ECR"<br>]</pre> | no |
+| <a name="input_resource_types"></a> [resource\_types](#input\_resource\_types) | (Required) Type of resources to scan. Valid values are EC2, ECR, and LAMBDA. At least one item is required. | `list(string)` | <pre>[<br/>  "LAMBDA",<br/>  "LAMBDA_CODE",<br/>  "EC2",<br/>  "ECR"<br/>]</pre> | no |
 
 ## Outputs
 
@@ -70,5 +70,5 @@ Checkout our other :point\_right: [terraform modules](https://registry.terraform
 
 ## Copyright
 
-Copyright © 2017-2024 [Blackbird Cloud](https://blackbird.cloud)
+Copyright © 2017-2025 [Blackbird Cloud](https://blackbird.cloud)
 <!-- END_TF_DOCS -->
